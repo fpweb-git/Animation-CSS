@@ -1,0 +1,21 @@
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .animation{
+        background-color: $primary-color;
+        border: 0.5px solid white;
+        padding: 2%;
+        .number{
+            &__txt{
+                color: rgba(255, 255, 255, 0.774);
+                font-family: 'PT Mono', monospace;
+            }
+        }
+    }
+    .container{
+        @include contain;
+    &--3{
+        flex-direction: column;
+    }
+    }
+}

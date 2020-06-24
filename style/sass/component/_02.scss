@@ -1,0 +1,34 @@
+.form{
+    &__group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & label{
+            font-size: 2rem;
+            color: white;
+            width: 80%;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid $secondary-color;
+        }
+        & input{
+            border: 2px solid lightblue;
+            margin-top: 1.5rem;
+            border-radius: 100rem;
+            outline: none;
+            width: 80%;
+            font-size: 2rem;
+            color: purple;
+            padding: 0.5rem 1.5rem;
+            transition: background-color 500ms;
+            box-shadow:none;
+            &:focus{
+                border: 3px solid $secondary-color;
+            }
+            &:not(:focus):invalid{
+                background-color: $invalid;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}

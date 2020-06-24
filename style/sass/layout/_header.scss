@@ -1,0 +1,8 @@
+.header{
+    background-color: darken( $primary-color, 5% );
+    &__logo{
+        color: white;
+        padding: 1rem;
+    }
+    position: sticky top;
+}

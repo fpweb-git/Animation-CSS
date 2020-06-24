@@ -1,0 +1,21 @@
+.btn {
+    background: $secondary-color;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    order: 2;
+    margin-bottom: -3rem;
+    &:active + .ball{
+        transform: scale(2);
+    }
+}
+.ball {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid white;
+    margin-bottom: 5rem;
+    border-radius: 50%;
+    transition: transform 3000ms;
+}
