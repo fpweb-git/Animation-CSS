@@ -1,6 +1,7 @@
 .content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
     .animation{
         background-color: $primary-color;
         border: 0.5px solid white;

@@ -1,0 +1,53 @@
+
+.container--5{
+    display: flex;
+    flex-direction: column;
+    h3{
+        color: white;
+        font-size: 1em;
+    }
+}
+
+.container{
+    &__space{
+    height: 8%;
+    width: 70%;
+    border: 1px solid white;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+        &__cube{
+            height: 80%;
+            width: 6%;
+            background-color: white;
+            animation-duration: 2000ms;
+            animation-name: prm;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        &__cube--1{
+            animation-timing-function : linear;
+        }
+        &__cube--2{
+            animation-timing-function : ease;
+        }
+        &__cube--3{
+            animation-timing-function : ease-in;
+        }
+        &__cube--4{
+            animation-timing-function : ease-out;
+        }
+        &__cube--5{
+            animation-timing-function : ease-in-out;
+        }
+    }
+}
+        
+@keyframes prm{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(1565%);
+    }
+}
