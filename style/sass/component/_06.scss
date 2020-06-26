@@ -1,0 +1,14 @@
+.container--6{
+    .btn{
+        &:active + .block6{
+            transform: scaleX(2) scaleY(0.5);
+        }
+    }
+    .block6{
+        transition: transform 330ms ease-in-out;
+        width: 6rem;
+        height: 6rem;
+        background-color: white;
+        margin-bottom: 5rem;
+    }
+}

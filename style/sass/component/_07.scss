@@ -1,0 +1,14 @@
+.container--7{
+    .btn{
+        &:active + .block7{
+            transform: translate(90%, -60%);
+        }
+    }
+    .block7{
+        transition: transform 330ms ease-in-out;
+        width: 6rem;
+        height: 6rem;
+        background-color: white;
+        margin-bottom: 5rem;
+    }
+}

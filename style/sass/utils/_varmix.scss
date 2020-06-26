@@ -10,3 +10,9 @@ $invalid : rgb(223, 97, 97);
     align-items: center;
     height: 40vh;
 }
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}

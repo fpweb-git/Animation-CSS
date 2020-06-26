@@ -1,0 +1,38 @@
+.container--9{
+    .btn{
+        margin-top: 5rem;
+        &:active + .blockbox{
+            & > .blockbox--1{
+                transform: rotate(0deg);
+            }
+            & > .blockbox--2{
+                transform: rotate(0turn);
+            }
+        }
+    }
+    .blockbox{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        &--1{
+            transform: rotate(-360deg);
+            transition: transform 500ms ease-in-out;
+        }
+        &--2{
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
+        }
+
+
+    }
+
+    .block9{
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid white;
+        @include flexCenter;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: white;
+    }
+}
