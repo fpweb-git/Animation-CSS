@@ -1,14 +1,14 @@
-.container--8{
+.container--10{
     .btn{
-        &:active + .block8{
-            transform: scale(1);
-        .block8__txt{
+        &:active + .block10{
+            transform: scale(1) rotate(0deg);
+        .block10__txt{
             transform: translateY(0);
         }
     }
     }
-    .block8{
-        transform: scale(0.3);
+    .block10{
+        transform: scale(.3) rotate(-90deg);
         transition: transform 330ms ease-in-out;
         width: 6rem;
         height: 6rem;

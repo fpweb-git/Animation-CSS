@@ -1,0 +1,20 @@
+.container--11{
+    padding: 2%;
+    .btn{
+        order: unset;
+        margin: unset;
+        &:active + .block11{
+            transform: scale(1.9) translateX(80%) translateY(-10%);
+    }
+    }
+    .block11{
+        transform: scale(1);
+        transition: transform 330ms ease-in-out;
+        margin-top: 2rem;
+        width: 10rem;
+        height: 10rem;
+        background-color: white;
+        overflow: hidden;
+        @include flexCenter;
+    }
+}

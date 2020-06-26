@@ -1,0 +1,52 @@
+.container--12{
+        .block12{
+            height: 30%;
+            width: 30%;
+            background-color: white;
+            animation-duration: 1500ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function : ease-in-out;
+        }
+        &--1{
+            animation-name: skewX;
+        }
+        &--2{
+            animation-name: skewY;
+        }
+        &--3{
+            animation-name: skew;
+        }
+        .info{
+            color: white;
+            text-align: center;
+        }
+}
+
+        
+@keyframes skewX{
+    from{
+        transform: skewX(0deg);
+    }
+    to{
+        transform: skewX(45deg);
+    }
+}
+
+@keyframes skewY{
+    from{
+        transform: skewY(0deg);
+    }
+    to{
+        transform: skewY(45deg);
+    }
+}
+
+@keyframes skew{
+    from{
+        transform: skew(0,0);
+    }
+    to{
+        transform: skew(45deg,45deg);
+    }
+}
