@@ -10,6 +10,7 @@
             &__txt{
                 color: rgba(255, 255, 255, 0.774);
                 font-family: 'PT Mono', monospace;
+                font-weight: 400;
             }
         }
     }
@@ -50,6 +51,12 @@
         grid-template-rows: 80%;
         justify-items: center;
         padding: 5%;
+    }
+    &--14{
+        flex-direction: column;
+    }
+    &--16{
+        flex-direction: column;
     }
     }
 }

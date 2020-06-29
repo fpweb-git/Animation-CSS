@@ -1,6 +1,8 @@
 $primary-color : #243241 ;
 $secondary-color : #3498db;
 $invalid : rgb(223, 97, 97);
+$btn-width: 14vw;
+$btn-height: 6vw;
 
 
 
@@ -15,4 +17,17 @@ $invalid : rgb(223, 97, 97);
     display: flex;
     justify-content: center;
     align-items: center;   
+}
+
+@mixin facet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

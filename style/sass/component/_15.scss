@@ -1,0 +1,33 @@
+.btn3d {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    width: $btn-width;
+    height: $btn-height;
+    min-width: 110px;
+    min-height: 40px;
+    perspective: 500px;
+    &:active {
+        & > .btn__flip {
+            transform: rotateX(-90deg);
+        }
+    }
+    .btn__flip {
+        @include facet; 
+        transform-style: preserve-3d;
+        transform-origin: center bottom ($btn-height/2);
+        transition: transform 500ms cubic-bezier(.7,.01,.23,.99);
+        transform: rotateX(0deg);
+        .btn__flip--off {
+            transform: rotateX(0deg) translateZ($btn-height/2);
+            @include facet;
+            background: $secondary-color;
+        }
+        .btn__flip--on {
+            transform: rotateX(90deg) translateZ($btn-height/2);
+            @include facet;
+            background: $invalid;
+        }
+    }
+}
