@@ -44,5 +44,12 @@
         justify-items: center;
         padding: 5%;
     }
+    &--13{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80%;
+        justify-items: center;
+        padding: 5%;
+    }
     }
 }

@@ -1,0 +1,52 @@
+.container--13{
+    .block13{
+        height: 30%;
+        width: 30%;
+        background-color: white;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function : ease-in-out;
+    }
+    &--1{
+        animation-name: road;
+    }
+    &--2{
+        animation-name: watch;
+    }
+    &--3{
+        animation-name: coming;
+    }
+    .info{
+        color: white;
+        text-align: center;
+    }
+}
+
+    
+@keyframes road{
+from{
+    transform: perspective(0) rotateX(0);
+}
+to{
+    transform: perspective(40px) rotateX(45deg);
+}
+}
+
+@keyframes watch{
+from{
+    transform: perspective(0) rotateX(0);
+}
+to{
+    transform: perspective(150px) rotateY(75deg);
+}
+}
+
+@keyframes coming{
+from{
+    transform: perspective(0) translateZ(0);
+}
+to{
+    transform: perspective(150px) translateZ(60px);
+}
+}

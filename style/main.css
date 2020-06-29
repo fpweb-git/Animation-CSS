@@ -548,6 +548,106 @@ body {
   }
 }
 
+.container--13 .block13 {
+  height: 30%;
+  width: 30%;
+  background-color: white;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.container--13--1 {
+  -webkit-animation-name: road;
+          animation-name: road;
+}
+
+.container--13--2 {
+  -webkit-animation-name: watch;
+          animation-name: watch;
+}
+
+.container--13--3 {
+  -webkit-animation-name: coming;
+          animation-name: coming;
+}
+
+.container--13 .info {
+  color: white;
+  text-align: center;
+}
+
+@-webkit-keyframes road {
+  from {
+    -webkit-transform: perspective(0) rotateX(0);
+            transform: perspective(0) rotateX(0);
+  }
+  to {
+    -webkit-transform: perspective(40px) rotateX(45deg);
+            transform: perspective(40px) rotateX(45deg);
+  }
+}
+
+@keyframes road {
+  from {
+    -webkit-transform: perspective(0) rotateX(0);
+            transform: perspective(0) rotateX(0);
+  }
+  to {
+    -webkit-transform: perspective(40px) rotateX(45deg);
+            transform: perspective(40px) rotateX(45deg);
+  }
+}
+
+@-webkit-keyframes watch {
+  from {
+    -webkit-transform: perspective(0) rotateX(0);
+            transform: perspective(0) rotateX(0);
+  }
+  to {
+    -webkit-transform: perspective(150px) rotateY(75deg);
+            transform: perspective(150px) rotateY(75deg);
+  }
+}
+
+@keyframes watch {
+  from {
+    -webkit-transform: perspective(0) rotateX(0);
+            transform: perspective(0) rotateX(0);
+  }
+  to {
+    -webkit-transform: perspective(150px) rotateY(75deg);
+            transform: perspective(150px) rotateY(75deg);
+  }
+}
+
+@-webkit-keyframes coming {
+  from {
+    -webkit-transform: perspective(0) translateZ(0);
+            transform: perspective(0) translateZ(0);
+  }
+  to {
+    -webkit-transform: perspective(150px) translateZ(60px);
+            transform: perspective(150px) translateZ(60px);
+  }
+}
+
+@keyframes coming {
+  from {
+    -webkit-transform: perspective(0) translateZ(0);
+            transform: perspective(0) translateZ(0);
+  }
+  to {
+    -webkit-transform: perspective(150px) translateZ(60px);
+            transform: perspective(150px) translateZ(60px);
+  }
+}
+
 .header {
   background-color: #1b2531;
   display: -webkit-box;
@@ -666,5 +766,30 @@ body {
       grid-template-rows: 80%;
   justify-items: center;
   padding: 5%;
+}
+
+.content .container--13 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 80%;
+      grid-template-rows: 80%;
+  justify-items: center;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */
