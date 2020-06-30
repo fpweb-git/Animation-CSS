@@ -19,7 +19,6 @@
             font-size: 2rem;
             color: purple;
             padding: 0.5rem 1.5rem;
-            transition: background-color 500ms;
             box-shadow:none;
             &:focus{
                 border: 3px solid $secondary-color;
@@ -28,7 +27,19 @@
                 background-color: $invalid;
                 border: none;
                 color: white;
+                animation: shake 150ms cubic-bezier(.4,.1,.6,.9) 2;
             }
         }
+    }
+}
+
+@keyframes shake{
+    25% {
+        // entièrement à droite
+        transform: translateX(2%);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX(2%);
     }
 }

@@ -1,0 +1,23 @@
+.loader{
+    &__bar{
+        width: 10%;
+        height: 30%;
+        background-color: white;
+        animation: bars 1000ms backwards ease-in-out infinite alternate;
+        &--1{
+            animation-delay: 200ms;
+        }
+        &--2{
+            animation-delay: 400ms;
+        }
+        &--3{
+            animation-delay: 600ms;
+        }
+        &--4{
+            animation-delay: 800ms;
+        }
+        &--5{
+            animation-delay: 1000ms;
+        }
+    }
+}

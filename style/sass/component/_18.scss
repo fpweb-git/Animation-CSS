@@ -1,0 +1,22 @@
+.loader2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+        &__bar{
+            width: 2vh;
+            height: 10vh;
+            background-color: white;
+            animation: bars $anim-dur backwards ease-in-out infinite alternate;
+            @for $i from 1 through 5 {
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
+                }
+                &--#{$i}-inv {
+                    animation-delay: $anim-delay * $i;
+                    animation-direction: alternate-reverse;
+                    background-color: $secondary-color;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }

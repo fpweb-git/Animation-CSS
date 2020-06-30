@@ -1,3 +1,25 @@
+@-webkit-keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 * {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
@@ -72,8 +94,6 @@ body {
   font-size: 2rem;
   color: purple;
   padding: 0.5rem 1.5rem;
-  -webkit-transition: background-color 500ms;
-  transition: background-color 500ms;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -86,6 +106,30 @@ body {
   background-color: #df6161;
   border: none;
   color: white;
+  -webkit-animation: shake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+          animation: shake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+
+@-webkit-keyframes shake {
+  25% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  75% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+}
+
+@keyframes shake {
+  25% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  75% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
 }
 
 .btn {
@@ -852,6 +896,127 @@ body {
   }
 }
 
+.loader__bar {
+  width: 10%;
+  height: 30%;
+  background-color: white;
+  -webkit-animation: bars 1000ms backwards ease-in-out infinite alternate;
+          animation: bars 1000ms backwards ease-in-out infinite alternate;
+}
+
+.loader__bar--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.loader__bar--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.loader__bar--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.loader__bar--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.loader__bar--5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.loader2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+.loader2__bar {
+  width: 2vh;
+  height: 10vh;
+  background-color: white;
+  -webkit-animation: bars 1000ms backwards ease-in-out infinite alternate;
+          animation: bars 1000ms backwards ease-in-out infinite alternate;
+}
+
+.loader2__bar--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.loader2__bar--1-inv {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  animation-direction: alternate-reverse;
+  background-color: #3498db;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader2__bar--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.loader2__bar--2-inv {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+  background-color: #3498db;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader2__bar--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.loader2__bar--3-inv {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  animation-direction: alternate-reverse;
+  background-color: #3498db;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader2__bar--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.loader2__bar--4-inv {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+  background-color: #3498db;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader2__bar--5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.loader2__bar--5-inv {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  animation-direction: alternate-reverse;
+  background-color: #3498db;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .header {
   background-color: #1b2531;
   display: -webkit-box;
@@ -992,6 +1157,20 @@ body {
 }
 
 .content .container--16 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .container.loader {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40% 0 40%;
+}
+
+.content .container--18 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

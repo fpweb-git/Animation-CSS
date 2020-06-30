@@ -3,6 +3,8 @@ $secondary-color : #3498db;
 $invalid : rgb(223, 97, 97);
 $btn-width: 14vw;
 $btn-height: 6vw;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;
 
 
 
@@ -30,4 +32,14 @@ $btn-height: 6vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+        
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
 }

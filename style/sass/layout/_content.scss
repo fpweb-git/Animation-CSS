@@ -58,5 +58,13 @@
     &--16{
         flex-direction: column;
     }
+    &.loader{
+        justify-content: space-between;
+        padding: 0 40% 0 40%;
+    }
+    &--18{
+        flex-direction: column;
+    }
     }
 }
+
